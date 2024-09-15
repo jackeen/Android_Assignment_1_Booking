@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Header"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/list_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/list_tab_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thing of place"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/list_tab_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/list_tab_stay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/list_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

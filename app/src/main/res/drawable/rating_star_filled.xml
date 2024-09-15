@@ -1,0 +1,10 @@
+<!-- res/drawable/star_filled.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="20dp" android:height="20dp"/> <!-- Change width and height for size -->
+            <solid android:color="#FFD700"/> <!-- Filled star color -->
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</layer-list>

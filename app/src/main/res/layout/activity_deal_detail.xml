@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DealDetailActivity">
+
+    <Toolbar
+        android:id="@+id/deal_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Deal Details"
+        android:navigationIcon="@drawable/baseline_arrow_back_24"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical"
+        >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/deal_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:ellipsize="end"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/semi_black"
+            android:layout_marginVertical="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deal payment: "
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:id="@+id/deal_detail_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deal type: "
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:id="@+id/deal_detail_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deal time: "
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:id="@+id/deal_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1999"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/deal_detail_target_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go target details"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/list_place_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/list_place_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/semi_black"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <RatingBar
+            android:id="@+id/list_place_item_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.5"
+            android:rating="4.5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best between: Aug - Sep"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#F77B22"
+                app:cardCornerRadius="6dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available from"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40% off"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#C1E5FF"
+                app:cardCornerRadius="6dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spaces"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="end"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price from"
+                    />
+                <TextView
+                    android:id="@+id/list_place_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$78"
+                    style="@style/TextAppearance.Material3.TitleLarge"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

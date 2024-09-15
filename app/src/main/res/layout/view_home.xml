@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            >
+
+            <ImageView
+                android:id="@+id/country_img"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bookme_heade_nz"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_country_nz"
+                    android:text="New Zealand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:backgroundTint="@color/semi_black"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btn_country_au"
+                    android:text="Australia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:backgroundTint="@color/semi_black"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btn_country_fj"
+                    android:text="Fiji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:backgroundTint="@color/semi_black"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_go_dest_list"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/holo_blue_dark"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginTop="220dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardElevation="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+                    <TextView
+                        android:id="@+id/btn_go_dest_list_text"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Find more in New Zealand"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/home_popular_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular New Zealand Destinations"
+                android:paddingTop="10dp"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_dest_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

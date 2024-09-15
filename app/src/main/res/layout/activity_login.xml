@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Login"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_username_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/semi_black"
+            android:layout_marginVertical="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="If you don’t have account yet, please register one."
+            />
+
+        <Button
+            android:id="@+id/login_go_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register an acount"
+            style="@style/Widget.Material3.Button.TextButton"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+</LinearLayout>

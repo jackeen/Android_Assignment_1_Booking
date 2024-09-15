@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/home_dest_recycler_item_image"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_nz_desgisborne_eastcape"
+                />
+
+            <TextView
+                android:id="@+id/home_dest_recycler_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="#AA333333"
+                android:text="Long TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong TitleLong Title"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
